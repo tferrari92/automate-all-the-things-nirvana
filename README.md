@@ -20,4 +20,4 @@
 <p title="All The Things" align="center"> <img src="https://i.imgur.com/4VKAF7C.jpg"></p>
 
 
-# **BRAINDAMAGE EDITION**
+# **NIRVANA EDITION**
