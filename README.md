@@ -849,5 +849,5 @@ Special thanks to all these wonderful YouTube people. This wouldn't have been po
 
 ## On the next edition
 
-[Automate All The Things Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana):
-- We'll deploy a Developer Portal with Backstage
+[Automate All The Things Almighty Edition](https://github.com/tferrari92/automate-all-the-things-almighty):
+- Who knows what the future holds?
