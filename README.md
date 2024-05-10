@@ -21,7 +21,7 @@
 
 # **NIRVANA EDITION**
 
-This Transcendence Edition builds upon the [Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage).
+This Nirvana Edition builds upon the [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload).
 
 ### New features:
 
@@ -36,9 +36,9 @@ This Transcendence Edition builds upon the [Braindamage Edition](https://github.
 2. [Hardcore Edition](https://github.com/tferrari92/automate-all-the-things-hardcore)
 3. [Insane Edition](https://github.com/tferrari92/automate-all-the-things-insane)
 4. [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload)
-6. [Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence)
 7. [Nirvana Edition](https://github.com/tferrari92/automate-all-the-things-nirvana)
 <!-- 5. [Braindamage Edition](https://github.com/tferrari92/automate-all-the-things-braindamage) -->
+<!-- 6. [Transcendence Edition](https://github.com/tferrari92/automate-all-the-things-transcendence)  -->
 
 ### Spin-offs:
 - [Backstage Minikube Lab](https://github.com/tferrari92/backstage-minikube-lab)
@@ -170,7 +170,7 @@ Our app is a very simple static website, but I'm not spoiling it for you. You'll
 
 This is not a free project, it will cost you between $1 US dollars and $10 depending on how long you run the resources for. That's assuming you run them for a few hours tops, not days. Always remember to run the [destroy-all-the-things pipeline](/azure-devops/06-destroy-all-the-things.yml) when you are done.
 
-For this Transcendence Edition we assume that you own a domain like "example.com" and it's managed in your AWS account.
+For this Nirvana Edition we assume that you own a domain like "example.com" and it's managed in your AWS account.
 
 Some things could have been further automated but I prioritized modularization and separation of concerns.<br>
 
@@ -193,17 +193,17 @@ Let's begin...
 
 In order to turn this whole deployment into your own thing, we need to do some initial setup:
 
-1. Fork this repo. Keep the repository name "automate-all-the-things-transcendence".
+1. Fork this repo. Keep the repository name "automate-all-the-things-nirvana".
 1. Clone the repo from your fork:
 
 ```bash
-git clone https://github.com/<your-github-username>/automate-all-the-things-transcendence.git
+git clone https://github.com/<your-github-username>/automate-all-the-things-nirvana.git
 ```
 
 2. Move into the directory:
 
 ```bash
-cd automate-all-the-things-transcendence
+cd automate-all-the-things-nirvana
 ```
 
 2. Run the initial setup script. Come back when you are done:
@@ -342,7 +342,7 @@ To install a self-hosted agent on your machine, you can follow the official docu
 
 # ABOUT EXTERNAL-DNS & CERT-MANAGER
 
-For this Transcendence Edition, I'll assume you own a domian like "exmple.com" and have it hosted in AWS Route53. If you don't, go get yourself one before proceeding.
+For this Nirvana Edition, I'll assume you own a domian like "exmple.com" and have it hosted in AWS Route53. If you don't, go get yourself one before proceeding.
 <br/>
 
 We'll add these two new tools: 
@@ -453,7 +453,7 @@ Oh and lastly... it will export an artifact with the instructions on how to conn
 3. Click on "Create Pipeline".
 4. Select "Github".
 5. You might get a screen to authorize Azure Pipelines to access your GitHub account, if so, go ahead and click the green button.
-6. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+6. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 7. You might also get a screen to install the Azure Pipelines App on your GitHub account, if so, go ahead and click the green button and follow the instructions.
 8. Select "Existing Azure Pipelines YAML file".
 9. Under "Branch" select "main" and under "Path" select "/azure-devops/00-deploy-infra.yml". Click "Continue".
@@ -566,7 +566,7 @@ Finally the pipeline will get the ArgoCD web UI URL and admin account password a
 1. Go to "Pipelines" under "Pipelines" on the left side menu.
 2. Click on "New pipeline".
 3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+4. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 5. Select "Existing Azure Pipelines YAML file".
 6. Under "Branch" select "main" and under "Path" select "/azure-devops/01-deploy-argocd.yml". Click "Continue".
 7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
@@ -605,7 +605,7 @@ You could easily encrypt the secrets yourselves using the kubeseal CLI tool, but
 1. Go to "Pipelines" under "Pipelines" on the left side menu.
 2. Click on "New pipeline".
 3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+4. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 5. Select "Existing Azure Pipelines YAML file".
 6. Under "Branch" select "main" and under "Path" select "/azure-devops/02-sealed-secret-generator.yml". Click "Continue".
 7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
@@ -637,7 +637,7 @@ You can find more info on Harbor on [this DevOps Toolkit video](https://youtu.be
 1. Go to "Pipelines" under "Pipelines" on the left side menu.
 2. Click on "New pipeline".
 3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+4. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 5. Select "Existing Azure Pipelines YAML file".
 6. Under "Branch" select "main" and under "Path" select "/azure-devops/03-harbor-setup.yml". Click "Continue".
 7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
@@ -686,7 +686,7 @@ Now, if the infrastrucure team needs to make changes to the cluster resources, t
 1. Go to "Pipelines" under "Pipelines" on the left side menu.
 2. Click on "New pipeline".
 3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+4. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 5. Select "Existing Azure Pipelines YAML file".
 6. Under "Branch" select "main" and under "Path" select "/azure-devops/04-build-and-deploy-backend.yml". Click "Continue".
 7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
@@ -724,7 +724,7 @@ For the infrastructure, same as before. If the infrastrucure team needs to, for 
 1. Go to "Pipelines" under "Pipelines" on the left side menu.
 2. Click on "New pipeline".
 3. Select "GitHub".
-4. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+4. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 5. Select "Existing Azure Pipelines YAML file".
 6. Under "Branch" select "main" and under "Path" select "/azure-devops/05-build-and-deploy-frontend.yml". Click "Continue".
 7. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
@@ -803,7 +803,7 @@ The pipeline will finish with a warning, worry not, this is because the "terrafo
 2. Go to "Pipelines" under "Pipelines" on the left side menu.
 3. Click on "New pipeline".
 4. Select "GitHub".
-5. Select the repo, it should be "your-github-username/automate-all-the-things-transcendence"
+5. Select the repo, it should be "your-github-username/automate-all-the-things-nirvana"
 6. Select "Existing Azure Pipelines YAML file".
 7. Under "Branch" select "main" and under "Path" select "/azure-devops/06-destroy-all-the-things.yml". Click "Continue".
 8. If you DON'T have a hosted parallelism, you'll need to do the same thing as in point 10 from the [infrastructure deployment pipeline](#instructions).
