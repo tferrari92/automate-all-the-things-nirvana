@@ -1,0 +1,5 @@
+appName: AATT_APP_NAME # This value was modified by the initial-setup python script
+email: AATT_USER_EMAIL # This value was modified by the initial-setup python script
+
+installCRDs: true
+
