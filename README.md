@@ -19,10 +19,10 @@
 
 <p title="All The Things" align="center"> <img src="https://i.imgur.com/4VKAF7C.jpg"></p>
 
-# **NIRVANA EDITION** (OUTDATED)
+# NIRVANA EDITION (OUTDATED)
 
-This Nirvana Edition builds upon the [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload).
 Since owning a domain is a big entry barrier, I'm pushing this edition backwards while I add new editions with new tools without requiering a domain.
+This Nirvana Edition builds upon the [Overload Edition](https://github.com/tferrari92/automate-all-the-things-overload).
 
 ### New features:
 
